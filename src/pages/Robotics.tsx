@@ -28,6 +28,7 @@ import steamRoomImg from "@/assets/robotics-steam-room.jpg";
 import microscopeImg from "@/assets/robotics-microscope.jpg";
 import digitalLearningImg from "@/assets/robotics-welcome-steam.jpg";
 import creativeBuildImg from "@/assets/robotics-anatomy-station.jpg";
+import Seo from "@/components/Seo";
 
 const galleryImages = [
   { src: kiboBlocksImg, alt: "KIBO wooden robot and coding blocks", caption: "KIBO in action" },
@@ -97,6 +98,7 @@ const subjects = [
 const Robotics = () => {
   return (
     <div className="min-h-screen bg-background">
+      <Seo title={"Robotics & STEAM Classes in Houston, TX | Brentwood Children's Academy"} description={"Hands-on robotics and STEAM learning in Houston, TX. Children build, code and explore with KIBO robots, science stations and creative discovery projects."} path={"/robotics-steam"} />
       <Navbar />
       <main>
         {/* 1. HERO */}

@@ -11,6 +11,7 @@ import prekImg from "@/assets/programs-prek.jpg";
 import schoolAgeImg from "@/assets/school-age-program.jpg";
 import summerImg from "@/assets/summer-camp.jpg";
 import differenceHero from "@/assets/difference-hero.jpg";
+import Seo from "@/components/Seo";
 
 const programs = [
   {
@@ -58,6 +59,7 @@ const programs = [
 const Programs = () => {
   return (
     <div className="min-h-screen bg-background">
+      <Seo title={"Childcare Programs in Houston, TX | Brentwood Children's Academy"} description={"Explore our Houston childcare programs for every age: infants, toddlers, preschool, pre-kindergarten, school age Varsity Club and themed summer camp fun."} path={"/programs"} />
       <Navbar />
       <main>
         <PageHero

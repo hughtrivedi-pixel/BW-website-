@@ -8,6 +8,7 @@ import CTABlock from "@/components/CTABlock";
 import SectionHeader from "@/components/SectionHeader";
 import familiesImg from "@/assets/tuition-classroom.jpg";
 import differenceHero from "@/assets/difference-hero.jpg";
+import Seo from "@/components/Seo";
 
 const tuitionCards = [
   {
@@ -66,6 +67,7 @@ const tuitionCards = [
 const Tuition = () => {
   return (
     <div className="min-h-screen bg-background">
+      <Seo title={"Childcare Tuition & Financial Aid in Houston, TX | Brentwood Children's Academy"} description={"Clear childcare tuition rates for our Houston, TX academy, plus information on financial aid, subsidy assistance and what every weekly rate includes."} path={"/tuition"} />
       <Navbar />
       <main>
         <PageHero

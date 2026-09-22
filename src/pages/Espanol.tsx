@@ -1,10 +1,12 @@
 import { Link } from "react-router-dom";
 import { Phone, MapPin, Clock, Mail, Star, Sun, Sparkles } from "lucide-react";
 import Footer from "@/components/Footer";
+import Seo from "@/components/Seo";
 
 const Espanol = () => {
   return (
     <div className="min-h-screen bg-background">
+      <Seo title={"Guarderia y Preescolar en Houston, TX | Brentwood Children's Academy"} description={"Cuidado infantil y preescolar en Houston, TX con personal bilingue. Programas para bebes, ninos pequenos, preescolar, pre-kinder y campamento de verano."} path={"/es"} />
       {/* Simple top bar */}
       <header className="bg-card border-b border-border">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">

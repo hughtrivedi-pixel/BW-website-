@@ -7,10 +7,12 @@ import PageHero from "@/components/PageHero";
 import familiesImg from "@/assets/families-dropoff.jpg";
 import classroomImg from "@/assets/preschool-classroom.jpg";
 import differenceHero from "@/assets/difference-hero.jpg";
+import Seo from "@/components/Seo";
 
 const ScheduleTour = () => {
   return (
     <div className="min-h-screen bg-background">
+      <Seo title={"Schedule a Childcare Tour in Houston, TX | Brentwood Children's Academy"} description={"Book a free, no-pressure tour of our Houston, TX childcare center. Visit classrooms, meet teachers and see our programs Monday through Friday after 9:30 AM."} path={"/schedule-tour"} />
       <Navbar />
       <main>
         <PageHero

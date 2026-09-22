@@ -9,6 +9,7 @@ import leadershipImg from "@/assets/leadership-trivedi.png";
 import staffImg from "@/assets/ccp-certification.png";
 import familiesImg from "@/assets/about-mission-basketball.jpg";
 import heroImg from "@/assets/difference-hero.jpg";
+import Seo from "@/components/Seo";
 
 const values = [
   { icon: Heart, title: "Love & Nurturing", description: "Every child is treated with patience, warmth, and genuine love as a cherished member of our extended family — because they are." },
@@ -22,6 +23,7 @@ const values = [
 const About = () => {
   return (
     <div className="min-h-screen bg-background">
+      <Seo title={"About Our Houston Childcare Center | Brentwood Children's Academy"} description={"Meet the family behind Brentwood Children's Academy in Houston, TX: our mission, experienced leadership, certified teachers and our commitment to children."} path={"/about"} />
       <Navbar />
       <main>
         <PageHero
