@@ -29,6 +29,7 @@ import summerCampIcecream from "@/assets/summer-camp-icecream.jpg";
 import infantRoomImg from "@/assets/infant-room.jpg";
 import toddlerPlayImg from "@/assets/toddler-play.jpg";
 import readingImg from "@/assets/reading-time.jpg";
+import Seo from "@/components/Seo";
 
 const programData: Record<string, {
   title: string;
@@ -234,6 +235,30 @@ const programData: Record<string, {
   },
 };
 
+
+const seoBySlug: Record<string, { title: string; description: string }> = {
+  "infant-toddler": {
+    title: "Infant & Toddler Care in Houston, TX | Brentwood Children's Academy",
+    description: "Loving infant and toddler care in Houston, TX for ages 6 weeks to 2 years, with low ratios, daily reports and nurturing teachers who know your baby well.",
+  },
+  "preschool": {
+    title: "Preschool in Houston, TX | Brentwood Children's Academy",
+    description: "Preschool in Houston, TX for ages 3 to 4, built on the Frog Street curriculum with early literacy, math, art and social skills through playful daily learning.",
+  },
+  "pre-kindergarten": {
+    title: "Pre-Kindergarten in Houston, TX | Brentwood Children's Academy",
+    description: "Pre-K in Houston, TX for ages 4 to 5, preparing children for kindergarten with reading, writing, math, STEAM projects and confident classroom routines.",
+  },
+  "school-age": {
+    title: "School Age & After School Care in Houston, TX | Brentwood Children's Academy",
+    description: "After school and school age care in Houston, TX for ages 5 to 12, with homework help, enrichment clubs, active play and safe supervision every school day.",
+  },
+  "summer-camp": {
+    title: "Summer Camp in Houston, TX | Brentwood Children's Academy",
+    description: "Summer camp in Houston, TX with weekly themes, field trips, water play, sports, arts and science adventures that keep children busy, active and inspired.",
+  },
+};
+
 const ProgramDetail = () => {
   const { slug } = useParams();
   const program = slug ? programData[slug] : null;
@@ -242,6 +267,11 @@ const ProgramDetail = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <Seo
+        title={seoBySlug[slug!]?.title ?? "Childcare Programs in Houston, TX | Brentwood Children's Academy"}
+        description={seoBySlug[slug!]?.description ?? "Explore Brentwood Children's Academy programs in Houston, TX for infants, toddlers, preschool, pre-kindergarten, school age children and summer camp."}
+        path={`/programs/${slug}`}
+      />
       <Navbar />
       <main>
         <PageHero
