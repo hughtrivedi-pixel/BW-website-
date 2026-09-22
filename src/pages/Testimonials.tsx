@@ -7,6 +7,7 @@ import CTABlock from "@/components/CTABlock";
 import SectionHeader from "@/components/SectionHeader";
 import heroImg from "@/assets/difference-hero.jpg";
 import familiesImg from "@/assets/families-dropoff.jpg";
+import Seo from "@/components/Seo";
 
 const testimonials = [
   { name: "Maria G.", program: "Preschool Parent", stars: 5, text: "Brentwood has been an absolute blessing for our family. Our daughter has thrived in the Preschool program and comes home every day excited to tell us what she learned. The teachers genuinely love these kids, and it shows." },
@@ -23,6 +24,7 @@ const testimonials = [
 const Testimonials = () => {
   return (
     <div className="min-h-screen bg-background">
+      <Seo title={"Parent Reviews of Our Houston Academy | Brentwood Children's Academy"} description={"Read reviews from Houston families about our infant, preschool, pre-K, school age and summer camp programs and the teachers who care for their children."} path={"/testimonials"} />
       <Navbar />
       <main>
         <PageHero badge="⭐ Testimonials" title="What Families" highlight="Are Saying" subtitle="Don't take our word for it — hear from the parents and families who trust Brentwood Children's Academy every single day." image={heroImg} />

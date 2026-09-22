@@ -19,6 +19,7 @@ import trsRatingImg from "@/assets/trs-rating-post.png";
 import lovingEnvironmentImg from "@/assets/loving-environment.jpg";
 import provenCurriculumImg from "@/assets/proven-curriculum.jpg";
 import enrichmentImg from "@/assets/enrichment-activities.jpg";
+import Seo from "@/components/Seo";
 
 const features = [
   {
@@ -126,6 +127,7 @@ const item = {
 const Difference = () => {
   return (
     <div className="min-h-screen bg-background">
+      <Seo title={"Why Families Choose Our Houston Academy | Brentwood Children's Academy"} description={"See what sets our Houston childcare apart: Texas Rising Star highest rating, Frog Street curriculum, safe classrooms and teachers who truly know your child."} path={"/difference"} />
       <Navbar />
       <main>
         <PageHero

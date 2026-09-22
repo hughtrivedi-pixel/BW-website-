@@ -8,6 +8,7 @@ import CTABlock from "@/components/CTABlock";
 import SectionHeader from "@/components/SectionHeader";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import heroImg from "@/assets/difference-hero.jpg";
+import Seo from "@/components/Seo";
 
 const resources = [
   { icon: MessageSquare, title: "Parent Testimonials", description: "Real stories from families who trust Brentwood Children's Academy with their little ones.", color: "bg-primary/10 text-primary", link: "/testimonials" },
@@ -33,6 +34,7 @@ const faqs = [
 const ParentResources = () => {
   return (
     <div className="min-h-screen bg-background">
+      <Seo title={"Parent Resources in Houston, TX | Brentwood Children's Academy"} description={"Helpful resources for Houston families: daily schedules, what to bring, enrollment steps, parent communication tools and answers to common childcare questions."} path={"/parent-resources"} />
       <Navbar />
       <main>
         <PageHero badge="📚 Resources" title="Parent" highlight="Resources" subtitle="Helpful information, real testimonials, galleries, and answers to every question — everything you need as a Brentwood family." image={heroImg} />

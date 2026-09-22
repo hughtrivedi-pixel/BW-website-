@@ -6,10 +6,12 @@ import PageHero from "@/components/PageHero";
 import familiesImg from "@/assets/preschool-classroom.jpg";
 import exteriorImg from "@/assets/center-exterior.jpg";
 import differenceHero from "@/assets/difference-hero.jpg";
+import Seo from "@/components/Seo";
 
 const Contact = () => {
   return (
     <div className="min-h-screen bg-background">
+      <Seo title={"Contact Our Houston Childcare Center | Brentwood Children's Academy"} description={"Contact Brentwood Children's Academy in Houston, TX. Call 713-466-9407, send us a message, or stop by our Eldridge Parkway center to ask about enrollment."} path={"/contact"} />
       <Navbar />
       <main>
         <PageHero

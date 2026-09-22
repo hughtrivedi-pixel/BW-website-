@@ -22,6 +22,7 @@ import toddlerPlayImg from "@/assets/toddler-play.jpg";
 import familiesImg from "@/assets/families-dropoff.jpg";
 import leadershipImg from "@/assets/leadership-team.jpg";
 import exteriorImg from "@/assets/center-exterior.jpg";
+import Seo from "@/components/Seo";
 
 const galleryGroups = [
   {
@@ -69,6 +70,7 @@ const galleryGroups = [
 const Gallery = () => {
   return (
     <div className="min-h-screen bg-background">
+      <Seo title={"Photo Gallery of Our Houston Academy | Brentwood Children's Academy"} description={"Take a look inside our Houston, TX childcare center: bright classrooms, outdoor playgrounds, STEAM activities, celebrations and everyday learning moments."} path={"/gallery"} />
       <Navbar />
       <main>
         <PageHero badge="📸 Photo Gallery" title="See Brentwood" highlight="in Action" subtitle="A glimpse inside our classrooms, play areas, activities, and the community that makes Brentwood so special." image={heroImg} />
