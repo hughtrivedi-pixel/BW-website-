@@ -325,6 +325,7 @@ const ProgramDetail = () => {
         description={seoBySlug[slug!]?.description ?? "Explore Brentwood Children's Academy programs in Houston, TX for infants, toddlers, preschool, pre-kindergarten, school age children and summer camp."}
         path={`/programs/${slug}`}
       />
+      {serviceSchemaBySlug[slug!] && <JsonLd data={serviceSchemaBySlug[slug!]} />}
       <Navbar />
       <main>
         <PageHero
