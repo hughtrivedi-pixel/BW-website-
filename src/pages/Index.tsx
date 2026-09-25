@@ -59,6 +59,7 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <Seo title={"Childcare & Preschool in Houston, TX | Brentwood Children's Academy"} description={"Texas Rising Star highest-rated childcare and preschool in Houston, TX. Infant, toddler, preschool, pre-K, school age and summer camp programs."} path={"/"} />
+      <JsonLd data={childCareSchema} />
       <Navbar />
       <main>
         <HeroSection />
