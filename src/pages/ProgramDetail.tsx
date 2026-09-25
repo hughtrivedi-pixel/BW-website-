@@ -30,6 +30,59 @@ import infantRoomImg from "@/assets/infant-room.jpg";
 import toddlerPlayImg from "@/assets/toddler-play.jpg";
 import readingImg from "@/assets/reading-time.jpg";
 import Seo from "@/components/Seo";
+import JsonLd from "@/components/JsonLd";
+
+const serviceSchemaBySlug: Record<string, object> = {
+  "infant-toddler": {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: "Infant & Toddler Care",
+    description: "Nurturing infant and toddler care in Houston, TX for children 6 weeks to 2 years, with low ratios, sensory exploration, and daily parent reports.",
+    provider: { "@type": "ChildCare", name: "Brentwood Children's Academy", telephone: "+1-713-466-9407", address: { "@type": "PostalAddress", streetAddress: "7210 N. Eldridge Pkwy", addressLocality: "Houston", addressRegion: "TX", postalCode: "77041", addressCountry: "US" } },
+    areaServed: ["Houston", "Copperfield", "Jersey Village", "Energy Corridor", "Bear Creek", "Cypress"],
+    serviceType: "Childcare",
+    audience: { "@type": "PeopleAudience", suggestedMinAge: 0, suggestedMaxAge: 2 },
+  },
+  "preschool": {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: "Preschool Program",
+    description: "Play-based Frog Street preschool curriculum in Houston, TX for ages 3–4, building early literacy, math, and social-emotional skills.",
+    provider: { "@type": "ChildCare", name: "Brentwood Children's Academy", telephone: "+1-713-466-9407", address: { "@type": "PostalAddress", streetAddress: "7210 N. Eldridge Pkwy", addressLocality: "Houston", addressRegion: "TX", postalCode: "77041", addressCountry: "US" } },
+    areaServed: ["Houston", "Copperfield", "Jersey Village", "Energy Corridor", "Bear Creek", "Cypress"],
+    serviceType: "Preschool",
+    audience: { "@type": "PeopleAudience", suggestedMinAge: 3, suggestedMaxAge: 4 },
+  },
+  "pre-kindergarten": {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: "Pre-Kindergarten Program",
+    description: "Kindergarten-readiness pre-K program in Houston, TX for ages 4–5, building reading, writing, math, and critical thinking foundations.",
+    provider: { "@type": "ChildCare", name: "Brentwood Children's Academy", telephone: "+1-713-466-9407", address: { "@type": "PostalAddress", streetAddress: "7210 N. Eldridge Pkwy", addressLocality: "Houston", addressRegion: "TX", postalCode: "77041", addressCountry: "US" } },
+    areaServed: ["Houston", "Copperfield", "Jersey Village", "Energy Corridor", "Bear Creek", "Cypress"],
+    serviceType: "Pre-Kindergarten",
+    audience: { "@type": "PeopleAudience", suggestedMinAge: 4, suggestedMaxAge: 5 },
+  },
+  "school-age": {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: "School Age / Varsity Club",
+    description: "Before and after-school care in Houston, TX for ages 5–12 with homework help, STEAM enrichment, sports, and leadership development.",
+    provider: { "@type": "ChildCare", name: "Brentwood Children's Academy", telephone: "+1-713-466-9407", address: { "@type": "PostalAddress", streetAddress: "7210 N. Eldridge Pkwy", addressLocality: "Houston", addressRegion: "TX", postalCode: "77041", addressCountry: "US" } },
+    areaServed: ["Houston", "Copperfield", "Jersey Village", "Energy Corridor", "Bear Creek", "Cypress"],
+    serviceType: "Before and After School Care",
+    audience: { "@type": "PeopleAudience", suggestedMinAge: 5, suggestedMaxAge: 12 },
+  },
+  "summer-camp": {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: "Summer Camp",
+    description: "Themed summer camp in Houston, TX for all ages with field trips, water play, STEAM challenges, and creative arts all summer long.",
+    provider: { "@type": "ChildCare", name: "Brentwood Children's Academy", telephone: "+1-713-466-9407", address: { "@type": "PostalAddress", streetAddress: "7210 N. Eldridge Pkwy", addressLocality: "Houston", addressRegion: "TX", postalCode: "77041", addressCountry: "US" } },
+    areaServed: ["Houston", "Copperfield", "Jersey Village", "Energy Corridor", "Bear Creek", "Cypress"],
+    serviceType: "Summer Camp",
+  },
+};
 
 const programData: Record<string, {
   title: string;
