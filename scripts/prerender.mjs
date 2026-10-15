@@ -39,8 +39,8 @@ function stripDefaults(html) {
   return html
     .replace(/\s*<title>[\s\S]*?<\/title>/i, "")
     .replace(/\s*<meta\s+name="description"[^>]*>/gi, "")
-    .replace(/\s*<meta\s+property="og:(title|description|url|type)"[^>]*>/gi, "")
-    .replace(/\s*<meta\s+name="twitter:(title|description)"[^>]*>/gi, "")
+    .replace(/\s*<meta\s+property="og:(title|description|url|type|image)"[^>]*>/gi, "")
+    .replace(/\s*<meta\s+name="twitter:(title|description|card|image)"[^>]*>/gi, "")
     .replace(/\s*<link\s+rel="canonical"[^>]*>/gi, "");
 }
 
