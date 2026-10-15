@@ -1,3 +1,3 @@
-- [ ] Shorten all 17 page titles to 30–60 characters, retaining Houston.
-- [ ] Include complete Open Graph and Twitter metadata with a verified HTTPS photo in generated HTML.
-- [ ] Verify metadata across every prerendered route.
+- [x] Shorten all 17 page titles to 30–60 characters, retaining Houston.
+- [x] Include complete Open Graph and Twitter metadata with a verified HTTPS photo in generated HTML.
+- [x] Verify metadata across every prerendered route using the same server renderer that generates the HTML files.
