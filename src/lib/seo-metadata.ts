@@ -1,4 +1,5 @@
 export const SITE_URL = "https://brentwoodchildrensacademy.com";
+export const SHARE_IMAGE_URL = `${SITE_URL}/assets/hero-children-CGjjcDXs.jpg`;
 
 const pageLabels: Record<string, string> = {
   "/": "Childcare in Houston",
