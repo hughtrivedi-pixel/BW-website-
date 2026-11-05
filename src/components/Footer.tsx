@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
+import brentwoodLogo from "@/assets/brentwood-logo.png";
 
 const Footer = () => {
   return (
@@ -9,9 +10,7 @@ const Footer = () => {
           {/* Brand */}
           <div>
             <Link to="/" className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center">
-                <span className="text-primary-foreground font-display font-bold text-lg">B</span>
-              </div>
+              <img src={brentwoodLogo} alt="" width={40} height={40} className="w-10 h-10 rounded-full flex-shrink-0" />
               <div className="leading-tight">
                 <span className="font-display font-bold text-card text-lg block">Brentwood</span>
                 <span className="text-card/60 text-xs font-body tracking-wide">Children's Academy</span>

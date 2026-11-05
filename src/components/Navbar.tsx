@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Phone, Mail, MapPin, Menu, X, ChevronDown, Instagram, Facebook } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import brentwoodLogo from "@/assets/brentwood-logo.png";
 
 const navLinks = [
   { label: "The Brentwood Difference", href: "/difference" },
@@ -94,9 +95,7 @@ const Navbar = () => {
       <nav className="sticky top-0 z-50 bg-card/95 backdrop-blur-md border-b border-border shadow-sm">
         <div className="container mx-auto flex items-center justify-between px-4 py-3">
           <Link to="/" className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center">
-              <span className="text-primary-foreground font-display font-bold text-lg">B</span>
-            </div>
+            <img src={brentwoodLogo} alt="" width={40} height={40} className="w-10 h-10 rounded-full flex-shrink-0" />
             <div className="leading-tight">
               <span className="font-display font-bold text-foreground text-lg block">Brentwood</span>
               <span className="text-muted-foreground text-xs font-body tracking-wide">Children's Academy</span>
